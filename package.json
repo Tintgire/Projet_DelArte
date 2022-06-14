@@ -1,0 +1,13 @@
+{
+  "name": "Projet perso",
+  "version": "1.0.0",
+  "description": "Projet Perso",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/prefixed/style.css --style expanded",
+    "prefix": "postcss ./public/css/prefixed/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "Hugo Boidin",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="././public/css/prefixed/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <title>Projet personnel</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Del Arte</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" class="passive">Adventure</a></li>
+          <li><a href="#" class="passive">Carte</a></li>
+          <li><a href="#" class="passive">Support</a></li>
+          <li><a href="#" class="info">Info</a></li>
+        </ul>
+      </div>
+      <i class="menu-hamburger fas fa-bars"></i>
+    </nav>
+    <header></header>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const ul = document.querySelector("ul");
+
+    menuHamburger.addEventListener("click", () => {
+      ul.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

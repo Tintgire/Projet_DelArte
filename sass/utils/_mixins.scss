@@ -1,0 +1,17 @@
+@mixin body-first {
+  max-width: 768px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 100%;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 100%;
+  }
+}

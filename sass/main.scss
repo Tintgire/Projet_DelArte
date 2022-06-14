@@ -1,0 +1,115 @@
+// Mobile first
+
+@import "/public/css/normalize.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap");
+
+@import "./utils/variables.scss";
+@import "./utils/functions.scss";
+@import "./utils/mixins.scss";
+@import "./utils/keyframes.scss";
+
+@import "./base/base.scss";
+@import "./base/typography.scss";
+
+@import "./components/buttons.scss";
+@import "./components/scrollbar.scss";
+@import "./components/loader.scss";
+
+@import "./layout/header.scss";
+@import "./layout/nav.scss";
+@import "./layout/container.scss";
+@import "./layout/footer.scss";
+@import "./layout/card.scss";
+@import "./layout/section.scss";
+@import "./layout/title.scss";
+
+@import "./pages/about.scss";
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/public/img/background-pizza.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  a {
+    color: black;
+    font-family: $font-txt;
+    font-size: 40px;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 25px;
+    }
+  }
+  .nav-links {
+    display: block;
+    @media (min-width: $breakpoint-tablet) {
+      display: block;
+    }
+  }
+  .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1b9154;
+    @media (min-width: $breakpoint-tablet) {
+      color: black;
+    }
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.209);
+    backdrop-filter: blur(8px);
+    margin: 100%;
+    transition: all 1s;
+    @media (min-width: $breakpoint-tablet) {
+      all: unset;
+      display: flex;
+    }
+  }
+  li {
+    margin: 25px 0;
+    @media (min-width: $breakpoint-tablet) {
+      margin: 0 20px;
+    }
+  }
+  .active {
+    color: #1b9154;
+    font-weight: 600;
+  }
+  .passive {
+    color: white;
+  }
+  .info {
+    color: red;
+  }
+  .menu-hamburger {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 40px;
+    color: white;
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+  .mobile-menu {
+    margin: 0;
+  }
+}
