@@ -49,9 +49,20 @@ header {
     }
   }
   .nav-links {
-    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.204);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    left: -100%;
+    transition: 0.5s all;
+    overflow: hidden;
     @media (min-width: $breakpoint-tablet) {
-      display: block;
+      all: unset;
     }
   }
   .logo {
@@ -63,21 +74,10 @@ header {
     }
   }
   ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.209);
-    backdrop-filter: blur(8px);
-    margin: 100%;
-    transition: all 1s;
     @media (min-width: $breakpoint-tablet) {
       all: unset;
       display: flex;
@@ -105,11 +105,12 @@ header {
     right: 50px;
     font-size: 40px;
     color: white;
+    cursor: pointer;
     @media (min-width: $breakpoint-tablet) {
       display: none;
     }
   }
   .mobile-menu {
-    margin: 0px;
+    left: 0;
   }
 }

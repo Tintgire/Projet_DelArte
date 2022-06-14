@@ -1,7 +1,7 @@
 {
-  "name": "Projet perso",
+  "name": "my-projet-perso",
   "version": "1.0.0",
-  "description": "Projet Perso",
+  "description": "Projet_Perso",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/prefixed/style.css --style expanded",

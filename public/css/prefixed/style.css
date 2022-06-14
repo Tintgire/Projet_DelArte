@@ -74,11 +74,22 @@ header {
   }
 }
 .navbar .nav-links {
-  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.204);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  left: -100%;
+  transition: 0.5s all;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .navbar .nav-links {
-    display: block;
+    all: unset;
   }
 }
 .navbar .logo {
@@ -92,21 +103,10 @@ header {
   }
 }
 .navbar ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.209);
-  backdrop-filter: blur(8px);
-  margin: 100%;
-  transition: all 1s;
 }
 @media (min-width: 768px) {
   .navbar ul {
@@ -138,6 +138,7 @@ header {
   right: 50px;
   font-size: 40px;
   color: white;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .navbar .menu-hamburger {
@@ -145,7 +146,7 @@ header {
   }
 }
 .navbar .mobile-menu {
-  margin: 0px;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
