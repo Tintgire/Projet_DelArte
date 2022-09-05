@@ -1,3 +1,5 @@
+Stand by : On prend du skill avant d'y toucher
+
 Ici c'est la Base frère
 
 Si tu as besoins d'installer et de comprendre SASS
